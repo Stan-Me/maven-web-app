@@ -6,7 +6,6 @@
 <title>acadalearning.com- Home Page</title>
 <link href="images/DP black.png" rel="icon">
 </head>
-</head>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <body>
