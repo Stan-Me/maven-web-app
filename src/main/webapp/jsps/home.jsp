@@ -8,8 +8,8 @@
 <link href="images/DP black.png" rel="icon">
 </head>
 <body>
-<h1>ACADA Learning</h1>
-<h2> Welcome to ACADA Learning. 
+<h1 style="text-align: center;">ACADA Learning</h1>
+<h2 style="text-align: center;"> Welcome to ACADA Learning. 
 	ACADA Learning is a an ideal online training  platform for DevOps and Cloud Engineers. 
 	We offer interview preparations and job assitance,
 	The shout of the King is in our midst. His name is JESUS.  HE IS OUR SUCCESS ACCESS KEY. Jesus is Lord. Halleluyah, Amen.</h2>
@@ -31,8 +31,8 @@
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center>ACADA Learning - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2022 by <a href="https://acadalearning.com/">ACADA Learning</a> </small></p>
+<p style="text-align: center;">ACADA Learning - Consultant, Training, Development Center.</p>
+<p style="text-align: center;"><small>Copyrights 2022 by <a href="https://acadalearning.com/">ACADA Learning</a> </small></p>
 
 </body>
 </html>
