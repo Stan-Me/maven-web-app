@@ -90,7 +90,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Acada Learning Releases Nexus Repository</name>
-	      <url>http://172.31.31.181:8081/repository/paypal_releases/</url>
+	      <url>http://172.31.31.181:8081/repository/paypal_releas/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
