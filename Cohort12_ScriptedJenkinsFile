@@ -1,0 +1,28 @@
+node('Node1') {
+  def MHD = tool name: "maven3.8.8"
+  stage('Clone from Github') {
+    sh 'echo Cloning from GitHub'
+    git 'https://github.com/Stan-Me/maven-web-app.git'
+    sh 'echo cloning done'
+  }
+  stage('Build with Maven') {
+    sh 'echo Building with Maven'
+    sh "${MHD}/bin/mvn package"
+    sh 'echo Building done'
+  }
+  stage('Test with Sonarqube'){
+    sh 'echo Testing started'
+    sh "${MHD}/bin/mvn sonar:sonar"
+    sh 'echo Test done'
+  }
+  stage('Deploying to Nexus'){
+    sh 'echo Deploying to Nexus'
+    sh "${MHD}/bin/mvn deploy"
+    sh 'echo Deployment to Nexus successful'
+  }
+  stage('Deploy to Tomcat'){
+    sh 'echo Deploying to Tomcat'
+    deploy adapters: [tomcat9(credentialsId: 'Tomcat_Cred', path: '', url: 'http://3.135.212.139:7000/')], contextPath: null, war: 'target/*war'
+    sh 'echo Deployment successful'
+  }
+}
