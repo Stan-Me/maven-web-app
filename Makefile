@@ -4,7 +4,7 @@ all: clean build
 
 build:
 	@echo "Building this project..."
-	mkdir $(BIN_DIR)
+	mkdir -p $(BIN_DIR)
 
 clean:
 	@echo "Cleaning up..."
