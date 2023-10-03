@@ -1,7 +1,7 @@
 # Sample Makefile2 with Function Targets
 
 # Target for function1
-targeta:
+function1:
 	@echo "This is function1 for target1."
 	@echo "You can put target-specific commands here."
 	@echo "For example, for target1, you can add:"
@@ -9,7 +9,7 @@ targeta:
 	@echo "  - Command 2 for target1"
 
 # Target for function2
-targetb:
+function2:
 	@echo "This is function2 for target2."
 	@echo "You can put target-specific commands here."
 	@echo "For example, for target2, you can add:"
