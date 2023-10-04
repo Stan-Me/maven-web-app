@@ -1,0 +1,14 @@
+BIN_DIR = bin
+
+all: create_directory copy_file
+
+create_directory:
+	@echo "Creating bin directory"
+	mkdir -p $(BIN_DIR)
+
+copy_file:
+	@echo "Copying file"
+	cp Dockerfile $(BIN_DIR)
+
+done:
+	@echo "Task done"
